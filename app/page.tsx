@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import Collections from "@/components/sections/Collections";
 import ContactSection from "@/components/sections/Contacts";
 import Hero from "@/components/sections/Hero";
 import OfficeLocations from "@/components/sections/officies";
@@ -13,14 +14,13 @@ export default function Home() {
     <div>
       <main className="">
         <Hero />
-        <Why_us/>
-        <TestimonialSection/>
-        <WeLive/>
-        <ProductsSection/>
-        <ContactSection/>
-        <PricingSection/>
-        <OfficeLocations/>
-        <Footer/>
+        <Collections />
+        <ProductsSection />
+        <TestimonialSection />
+        {/* <AboutSection /> */}
+        <ContactSection />
+        <PricingSection />
+        <Footer />
       </main>
     </div>
   );
