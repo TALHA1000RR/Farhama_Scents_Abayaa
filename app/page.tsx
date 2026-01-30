@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import AboutSection from "@/components/sections/AboutSection";
 import Collections from "@/components/sections/Collections";
 import ContactSection from "@/components/sections/Contacts";
 import Hero from "@/components/sections/Hero";
@@ -17,7 +18,7 @@ export default function Home() {
         <Collections />
         <ProductsSection />
         <TestimonialSection />
-        {/* <AboutSection /> */}
+        <AboutSection />
         <ContactSection />
         <PricingSection />
         <Footer />
