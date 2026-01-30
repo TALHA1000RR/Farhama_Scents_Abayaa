@@ -12,6 +12,121 @@
   --color-brandBlack: #171717;
   --color-brandWhite: #FFFFFF;
 }
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.customLink a,
+.customLink button {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  font-weight: 300;
+}
+
+.heroText {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float-soft {
+  animation: floatSoft 3s ease-in-out infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #171717;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C09F5F;
+}
+
+/* Loading state */
+.loading {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme {
+  --color-brandGreen: #004D25;
+  --color-brandGold: #C09F5F;
+  --color-brandBlack: #171717;
+  --color-brandWhite: #FFFFFF;
+}
 h3{
   font-family: "Josefin Sans", sans-serif;
 }
@@ -39,4 +154,4 @@ body {
 
 .animate-float-soft {
   animation: floatSoft 3s ease-in-out infinite;
-}
+} */
