@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+FARHAMA.md
+app/admin/doc.md
+
 # testing
 /coverage
 
