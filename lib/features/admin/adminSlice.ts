@@ -1,8 +1,13 @@
-import { adminService } from '@/api/services/api.service';
-import { DashboardStats, Order, Product, HeroSlide } from '@/types';
+
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import { adminService } from '../services/api.services';
-// import { DashboardStats, Order, Product, HeroSlide } from '../../types';
+import { adminService } from '../../../api/services/api.service';
+import { DashboardStats, Product, HeroSlide } from '../../../types';
+
+interface Order {
+  _id: string;
+  [key: string]: any;
+}
+
 
 interface AdminState {
   stats: DashboardStats | null;

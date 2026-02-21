@@ -1,8 +1,9 @@
-import { productService } from '@/api/services/api.service';
-import { Product } from '@/types';
+// import { productService } from '@/api/services/api.service';
+// import { Product } from '@/types';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import { productService } from '../services/api.services';
-// import { Product } from '../../types';
+import { productService } from '../../../api/services/api.service';
+import { Product } from '../../../types';
+
 
 interface ProductsState {
   items: Product[];

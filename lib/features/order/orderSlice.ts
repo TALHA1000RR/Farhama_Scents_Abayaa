@@ -1,8 +1,8 @@
-import { orderService } from '@/api/services/api.service';
-import { Order, CreateOrderInput } from '@/types';
+// import { orderService } from '@/api/services/api.service';
+// import { Order, CreateOrderInput } from '@/types';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import { orderService } from '../services/api.services';
-// import { Order, CreateOrderInput } from '../../types';
+import { orderService } from '../../../api/services/api.service';
+import { CreateOrderInput, Order } from '../../../types';
 
 interface OrdersState {
   myOrders: Order[];

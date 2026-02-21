@@ -1,8 +1,9 @@
-import { authService } from '@/api/services/api.service';
-import { User, RegisterInput, LoginInput } from '@/types';
+// import { authService } from '@/api/services/api.service';
+// import { User, RegisterInput, LoginInput } from '@/types';
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-// import { authService } from '../services/api.services';
-// import type { User, RegisterInput, LoginInput } from '../../types';
+import { authService } from '../../../api/services/api.service';
+import { User, RegisterInput, LoginInput } from '../../../types';
+
 
 interface AuthState {
   user: User | null;

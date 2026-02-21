@@ -4,7 +4,7 @@ import cartReducer from './features/cart/cartSlice';
 import  adminReducer  from './features/admin/adminSlice';
 import productsReducer from './features/product/productSlice';
 import ordersReducer from './features/order/orderSlice';
-import authReducer from './features/auth/AuthSlice';
+import authReducer from './features/auth/authSlice';
 
 export const store = configureStore({
   reducer: {
