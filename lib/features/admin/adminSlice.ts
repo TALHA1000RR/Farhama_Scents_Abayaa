@@ -43,7 +43,7 @@ export const fetchRevenueAnalytics = createAsyncThunk(
   'admin/revenue',
   async (year: number | undefined, { rejectWithValue }) => {
     try {
-      const res = await adminService.getRevenueAnalytics(year);
+      const res = await adminService.getRevenue(year);
       return res.data.data!;
     } catch (err: any) {
       return rejectWithValue(err.response?.data?.message || 'Failed');
