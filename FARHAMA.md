@@ -97,32 +97,6 @@ A modern, responsive e-commerce landing page for Farhama, a luxury brand special
 - Success/error feedback
 - Accessible navigation
 
-## File Structure
-```
-app/
-├── page.tsx                    # Main landing page
-├── layout.tsx                  # Root layout
-├── globals.css                 # Global styles
-├── style.js                    # Styled components
-└── admin/
-    └── dashboard/
-        └── page.tsx            # Admin dashboard
-
-components/
-├── navBar.tsx                  # Navigation with auth
-├── AuthModal.tsx               # Sign in/up modal
-├── footer.tsx                  # Footer with links
-├── ui/
-│   └── button.tsx              # Button component
-└── sections/
-    ├── Hero.tsx                # Auto-sliding hero
-    ├── Collections.tsx         # Features + collections
-    ├── Products.tsx            # Product showcase
-    ├── Testimonials.tsx        # Customer reviews
-    ├── AboutSection.tsx        # Brand story + blog
-    ├── Contacts.tsx            # Contact form
-    └── Price.tsx               # Membership packages
-```
 
 ## Getting Started
 
