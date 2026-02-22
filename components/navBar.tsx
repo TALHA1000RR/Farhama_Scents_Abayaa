@@ -16,7 +16,7 @@ import {
   User,
 } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
-import Logo from "@/public/logo.png";
+import Logo from "../public/logo.png";
 import AuthModal from "./ui/AuthModal";
 // import AuthModal from "./AuthModal";
 

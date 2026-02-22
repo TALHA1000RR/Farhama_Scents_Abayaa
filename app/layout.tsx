@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ReduxProvider } from '../lib/ReduxProvider';
-import Navbar from '../components/navBar';
-// import ReduxProvider from '@/components/ReduxProvider';
-// import Navbar from '@/components/Navbar';
+import Navbar from '../components/Navbar';
+// import Navbar from '../components/navBar';
+
 
 export const metadata: Metadata = {
   title: { default: 'Farhama Scents & Abayaa', template: '%s | Farhama' },

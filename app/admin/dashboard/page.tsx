@@ -70,7 +70,7 @@ export default function AdminDashboard() {
                       {new Date(order.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
                     </p>
                   </div>
-                  <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full ${STATUS_COLORS[order.status]}`}>
+                  <span className={`text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full ${STATUS_COLORS[order.status as OrderStatus]}`}>
                     {order.status}
                   </span>
                   <span className="font-black text-sm">£{order.total.toFixed(2)}</span>
