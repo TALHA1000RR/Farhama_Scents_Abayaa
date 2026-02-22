@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar, ArrowRight } from 'lucide-react';
-import { useBlog } from '@/hooks';
+import { useBlog } from '../../hooks';
+// import { useBlog } from '@/hooks';
 
 export default function BlogSection() {
   const { posts, isLoading } = useBlog(3);

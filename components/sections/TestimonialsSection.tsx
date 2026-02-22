@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
-import { useTestimonials } from '@/hooks';
+// import { useTestimonials } from '@/hooks';
 import Image from 'next/image';
+import { useTestimonials } from '../../hooks';
 
 const FALLBACK = [
   { _id: '1', name: 'Fatima Al-Hassan', location: 'Birmingham, UK', message: 'The Oud Rose perfume is absolutely divine. I get compliments everywhere I go. The packaging alone is a work of art — it came in the most beautiful box I have ever seen.', rating: 5, isApproved: true, createdAt: '' },

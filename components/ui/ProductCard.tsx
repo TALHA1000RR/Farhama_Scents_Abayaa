@@ -2,9 +2,10 @@
 import Image from 'next/image';
 import { ShoppingBag, Eye, Heart } from 'lucide-react';
 // import type { Product } from '@/types';
-import { useCart } from '@/hooks';
+// import { useCart } from '@/hooks';
 import Link from 'next/link';
 import { Product } from '../../types';
+import { useCart } from '../../hooks';
 
 interface Props {
   product: Product;

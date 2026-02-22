@@ -1,6 +1,7 @@
 'use client';
 // import { useCollections } from '@/hooks';
 import Image from 'next/image';
+import { useCollections } from '../../hooks';
 
 const FALLBACK = [
   { _id: '1', title: 'Luxury Perfumes', description: 'Handcrafted Arabic and Western fragrances, bottled in artisan glass.', image: 'https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=600&q=80', isActive: true, order: 1 },

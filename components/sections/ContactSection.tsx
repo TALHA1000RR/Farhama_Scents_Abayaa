@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Loader } from 'lucide-react';
-import { useContact } from '@/hooks';
+import { useContact } from '../../hooks';
+// import { useContact } from '@/hooks';
 
 export default function ContactSection() {
   const { submit, isLoading, isSuccess, error } = useContact();
