@@ -23,6 +23,8 @@ app/admin/doc.md
 # production
 /build
 
+docs/
+
 # misc
 .DS_Store
 *.pem
