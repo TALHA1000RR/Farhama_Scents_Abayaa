@@ -11,7 +11,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "@stripe/react-stripe-js": "^2.9.0",
-    "@stripe/stripe-js": "^4.9.0",    
+    "@stripe/stripe-js": "^4.9.0",
     "axios": "^1.13.5",
     "clsx": "^2.1.1",
     "lucide-react": "^0.563.0",
@@ -33,9 +33,5 @@
     "postcss": "^8",
     "autoprefixer": "^10",
     "typescript": "^5"
-  },
-  "overrides": {
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
   }
 }
