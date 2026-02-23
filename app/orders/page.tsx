@@ -2,13 +2,11 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { Package, Loader, ArrowRight } from 'lucide-react';
-// import { useOrders, useAuth } from '@/hooks';
 import { useRouter } from 'next/navigation';
 import Footer from '../../components/Footer';
 import { useAuth, useOrders } from '../../hooks';
 import { OrderStatus, PaymentStatus } from '../../types';
-// import Footer from '@/components/Footer';
-// import type { OrderStatus, PaymentStatus } from '@/types';
+
 
 const STATUS_COLORS: Record<OrderStatus, string> = {
   Pending: 'bg-yellow-100 text-yellow-700',
