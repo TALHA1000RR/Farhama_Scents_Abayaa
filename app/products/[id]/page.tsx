@@ -3,11 +3,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import { ShoppingBag, ChevronLeft, ChevronRight, Star, Truck, Shield, RotateCcw, Loader } from 'lucide-react';
-// import { useProducts, useCart } from '@/hooks';
 import Link from 'next/link';
-import Footer from '../../../components/Footer';
 import { useProducts, useCart } from '../../../hooks';
-// import Footer from '@/components/Footer';
+import Footer from '../../../components/Footer';
+
 
 export default function ProductDetailPage() {
   const { id } = useParams<{ id: string }>();
