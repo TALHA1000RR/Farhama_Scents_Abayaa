@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { ReduxProvider } from '../lib/ReduxProvider';
+// import { ReduxProvider } from '../lib/ReduxProvider';
 import Navbar from '../components/Navbar';
+import ReduxProvider from '../lib/ReduxProvider';
 // import Navbar from '../components/navBar';
 
 
