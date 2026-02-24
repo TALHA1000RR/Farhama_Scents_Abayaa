@@ -2,8 +2,7 @@
 import { useState, useCallback } from 'react';
 import { contactService } from '../api/services/api.service';
 import { ContactInput } from '../types';
-// import { contactService } from '@/store/services/api.services';
-// import type { ContactInput } from '@/types';
+
 
 /**
  * useContact — contact form submission hook.

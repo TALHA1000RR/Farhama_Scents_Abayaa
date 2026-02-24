@@ -2,8 +2,7 @@
 import { useState, useEffect } from 'react';
 import { blogService } from '../api/services/api.service';
 import { BlogPost } from '../types';
-// import { blogService } from '@/store/services/api.services';
-// import type { BlogPost } from '@/types';
+
 
 /**
  * useBlog — fetch published blog posts with optional limit.

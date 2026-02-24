@@ -2,8 +2,7 @@
 import { useState, useEffect } from 'react';
 import { collectionService } from '../api/services/api.service';
 import { Collection } from '../types';
-// import { collectionService } from '@/store/services/api.services';
-// import type { Collection } from '@/types';
+
 
 /**
  * useCollections — fetch active product collections.

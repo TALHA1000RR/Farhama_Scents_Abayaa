@@ -2,8 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Testimonial } from '../types';
 import { testimonialService } from '../api/services/api.service';
-// import { testimonialService } from '@/store/services/api.services';
-// import type { Testimonial } from '@/types';
+
 
 /**
  * useTestimonials — fetch publicly-approved testimonials.

@@ -1,7 +1,6 @@
 'use client';
 import { Check, Loader, Crown } from 'lucide-react';
 import { useAuth, usePricing } from '../../hooks';
-// import { usePricing, useAuth } from '@/hooks';
 
 export default function PricingSection() {
   const { plans, isLoading, subscribing, subscribe } = usePricing();

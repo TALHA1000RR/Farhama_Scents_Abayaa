@@ -1,5 +1,3 @@
-// import { orderService } from '@/api/services/api.service';
-// import { Order, CreateOrderInput } from '@/types';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { orderService } from '../../../api/services/api.service';
 import { CreateOrderInput, Order } from '../../../types';

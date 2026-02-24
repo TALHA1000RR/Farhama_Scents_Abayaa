@@ -2,8 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { pricingService } from '../api/services/api.service';
 import { MembershipPlan } from '../types';
-// import { pricingService } from '@/store/services/api.services';
-// import type { MembershipPlan } from '@/types';
+
 
 /**
  * usePricing — membership plan listing and Stripe subscription.

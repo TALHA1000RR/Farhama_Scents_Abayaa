@@ -1,12 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
-// import { useProducts } from '@/hooks';
-// import ProductCard from './ProductCard';
 import Link from 'next/link';
 import ProductCard from '../ui/ProductCard';
 import { Product } from '../../types';
 import { useProducts } from '../../hooks';
-// import type { ProductCategory } from '@/types';
 
 const CATEGORIES: { label: string; value: string }[] = [
   { label: 'All', value: '' },

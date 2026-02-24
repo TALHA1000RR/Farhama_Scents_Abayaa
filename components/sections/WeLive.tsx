@@ -7,11 +7,7 @@ import Photo from "../../assets/clothe3.jpeg";
 import img1 from "../../assets/clothe5.jpeg";
 import img2 from "../../assets/clothe6.jpeg";
 import img3 from "../../assets/clothe7.jpeg"; 
-// import Photo from "@/assets/clothe3.jpeg";
-// data/fashionPosts.ts
-// import img1 from "@/assets/clothe5.jpeg";
-// import img2 from "@/assets/clothe6.jpeg";
-// import img3 from "@/assets/clothe7.jpeg";
+
 
 export const fashionPosts = [
   {

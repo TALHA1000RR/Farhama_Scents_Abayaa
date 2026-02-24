@@ -1,19 +1,8 @@
-/**
- * <Toaster /> — renders toast notifications.
- * Place once in app/layout.tsx, inside the ReduxProvider:
- *
- *   import Toaster from '../components/ui/Toaster';
- *   ...
- *   <ReduxProvider>
- *     <Toaster />
- *     {children}
- *   </ReduxProvider>
- */
+
 'use client';
 import { useEffect, useState } from 'react';
 import { CheckCircle, XCircle, Info, AlertTriangle, X } from 'lucide-react';
 import { ToastType, ToastMessage, TOAST_EVENT } from '../hooks/useToast';
-// import { TOAST_EVENT, ToastMessage, ToastType } from '../../hooks/useToast';
 
 const ICONS: Record<ToastType, React.ReactNode> = {
   success: <CheckCircle size={18} className="text-green-500 flex-shrink-0" />,

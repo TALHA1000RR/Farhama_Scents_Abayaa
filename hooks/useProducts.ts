@@ -2,13 +2,7 @@
 import { useEffect } from 'react';
 import { fetchProducts, fetchFeaturedProducts, fetchProductById, clearCurrentProduct } from '../lib/features/product/productSlice';
 import { useAppDispatch, useAppSelector } from '../lib/store';
-// import { useAppDispatch, useAppSelector } from '@/store';
-// import {
-//   fetchProducts,
-//   fetchFeaturedProducts,
-//   fetchProductById,
-//   clearCurrentProduct,
-// } from '@/store/slices/productsSlice';
+
 
 /**
  * useProducts — product catalogue hook backed by Redux.

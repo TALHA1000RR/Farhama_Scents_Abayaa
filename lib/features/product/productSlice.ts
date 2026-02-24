@@ -1,5 +1,3 @@
-// import { productService } from '@/api/services/api.service';
-// import { Product } from '@/types';
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { productService } from '../../../api/services/api.service';
 import { Product } from '../../../types';

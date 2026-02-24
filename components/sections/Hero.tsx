@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import { adminService } from '../../api/services/api.service';
 import { HeroSlide } from '../../types';
-// import { adminService } from '@/store/services/api.services';
-// import type { HeroSlide } from '@/types';
+
 
 const FALLBACK_SLIDES: HeroSlide[] = [
   {
