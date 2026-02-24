@@ -112,7 +112,7 @@ export default function TestimonyModal({ isOpen, onClose }: Props) {
                     <label className="block text-[10px] font-black uppercase tracking-widest mb-1.5 text-gray-500">Your Location *</label>
                     <input type="text" required value={location} onChange={(e) => setLocation(e.target.value)}
                       placeholder="e.g. London, UK"
-                      className="w-full border border-gray-200 px-4 py-3 text-sm outline-none focus:border-black transition" />
+                      className="w-full border text-gray-700 border-gray-200 px-4 py-3 text-sm outline-none focus:border-black transition" />
                   </div>
 
                   <div>
@@ -125,7 +125,7 @@ export default function TestimonyModal({ isOpen, onClose }: Props) {
                     <textarea required rows={4} value={message} onChange={(e) => setMessage(e.target.value)}
                       minLength={20}
                       placeholder="Tell us about your experience with Farhama Scents & Abayaa..."
-                      className="w-full border border-gray-200 px-4 py-3 text-sm outline-none focus:border-black transition resize-none" />
+                      className="w-full border border-gray-200 px-4 py-3 text-sm outline-none text-gray-700 focus:border-black transition resize-none" />
                     <p className="text-[10px] text-gray-400 mt-1">{message.length} / 500 characters</p>
                   </div>
 
