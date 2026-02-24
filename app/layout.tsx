@@ -3,6 +3,7 @@ import './globals.css';
 // import { ReduxProvider } from '../lib/ReduxProvider';
 import Navbar from '../components/Navbar';
 import ReduxProvider from '../lib/ReduxProvider';
+import Toaster from '../utils/Toaster';
 // import Navbar from '../components/navBar';
 
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <ReduxProvider>
+          <Toaster />
           <Navbar />
           <main>{children}</main>
         </ReduxProvider>

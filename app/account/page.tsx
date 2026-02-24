@@ -1,8 +1,5 @@
 'use client';
 import { useState } from 'react';
-// import { useAuth } from '@/hooks';
-// import { userService } from '@/store/services/api.services';
-// import Footer from '@/components/Footer';
 import { Loader, CheckCircle } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
