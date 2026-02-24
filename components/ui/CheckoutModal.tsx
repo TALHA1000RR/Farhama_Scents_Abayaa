@@ -3,10 +3,9 @@ import { useState } from 'react';
 import { X, Loader, CheckCircle, AlertCircle } from 'lucide-react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, PaymentElement, useStripe, useElements } from '@stripe/react-stripe-js';
-// import { useCart, useOrders, useAuth } from '@/hooks';
 import { ShippingAddress } from '../../types';
 import { useCart, useOrders, useAuth } from '../../hooks';
-// import type { ShippingAddress } from '@/types';
+
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || '');
 

@@ -4,15 +4,6 @@ import { Testimonial } from '../types';
 import { testimonialService } from '../api/services/api.service';
 
 
-/**
- * useTestimonials — fetch publicly-approved testimonials.
- *
- * Returns:
- *  - testimonials  Array of approved testimonials (sorted by backend)
- *  - isLoading     True while fetching
- *  - error         Error message (or null)
- *  - refetch()     Manually re-fetch testimonials
- */
 export function useTestimonials() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [isLoading, setIsLoading] = useState(true);

@@ -5,30 +5,6 @@ import { useAppDispatch, useAppSelector } from '../lib/store';
 import { CreateOrderInput, Order } from '../types';
 
 
-/**
- * useOrders — order management hook for both customers and admins.
- *
- * Customer usage:
- *  - myOrders           User's own order history
- *  - placeOrder(data)   Create a new order → { success, data: { order, clientSecret } }
- *  - cancel(orderId)    Cancel a pending order → boolean
- *
- * Admin usage:
- *  - allOrders          All orders in the system
- *  - fetchAll(params?)  Load all orders (optional filters)
- *  - changeStatus(id, status)  Update an order's status → boolean
- *
- * Shared:
- *  - current            Single order loaded by fetchById
- *  - clientSecret       Stripe client secret from the latest placeOrder call
- *  - isLoading          True while fetching orders
- *  - isCreating         True while a new order is being created
- *  - error              Last error string (or null)
- *  - meta               Pagination metadata
- *  - getById(id)        Load a single order by ID
- *  - resetClientSecret()  Clear the Stripe client secret from state
- *  - resetError()         Clear the error from state
- */
 export function useOrders() {
   const dispatch = useAppDispatch();
   const { myOrders, allOrders, current, clientSecret, isLoading, isCreating, error, meta } =

@@ -27,12 +27,6 @@ function clearLocalStorage() {
   localStorage.removeItem('user');
 }
 
-// ─── initializeAuth ───────────────────────────────────────────────────────────
-// Reads from localStorage only — no network call.
-// The token is verified lazily: any 401 response from the API will trigger
-// the refresh interceptor in apiClient, which handles expiry automatically.
-// Calling getMe() here caused a race condition where the 401 interceptor
-// wiped localStorage immediately after a successful login.
 export const initializeAuth = createAsyncThunk('auth/initialize', async () => {
   if (typeof window === 'undefined') return null;
 

@@ -4,16 +4,7 @@ import { contactService } from '../api/services/api.service';
 import { ContactInput } from '../types';
 
 
-/**
- * useContact — contact form submission hook.
- *
- * Returns:
- *  - submit(data)  POST to /contact → returns true on success
- *  - isLoading     True while the request is in flight
- *  - isSuccess     True for 5 seconds after a successful submission
- *  - error         Error message string (or null)
- *  - reset()       Manually reset isSuccess / error back to defaults
- */
+
 export function useContact() {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);

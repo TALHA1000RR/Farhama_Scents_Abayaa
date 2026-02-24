@@ -4,19 +4,7 @@ import { blogService } from '../api/services/api.service';
 import { BlogPost } from '../types';
 
 
-/**
- * useBlog — fetch published blog posts with optional limit.
- *
- * @param limit   Number of posts to fetch (default: 3 for homepage preview)
- * @param page    Page number (default: 1)
- *
- * Returns:
- *  - posts      Array of published blog posts
- *  - isLoading  True while fetching
- *  - error      Error message (or null)
- *  - meta       Pagination metadata: { total, page, limit, totalPages }
- *  - refetch()  Manually re-load posts
- */
+
 export function useBlog(limit = 3, page = 1) {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);

@@ -4,17 +4,7 @@ import { pricingService } from '../api/services/api.service';
 import { MembershipPlan } from '../types';
 
 
-/**
- * usePricing — membership plan listing and Stripe subscription.
- *
- * Returns:
- *  - plans          Array of membership plans from the API
- *  - isLoading      True while fetching plans
- *  - subscribing    ID of the plan currently being subscribed to (or null)
- *  - error          Error message (or null)
- *  - subscribe(planId)  Redirect to Stripe checkout for the given plan
- *  - refetch()      Manually re-load plans
- */
+
 export function usePricing() {
   const [plans, setPlans] = useState<MembershipPlan[]>([]);
   const [isLoading, setIsLoading] = useState(true);

@@ -4,15 +4,7 @@ import { collectionService } from '../api/services/api.service';
 import { Collection } from '../types';
 
 
-/**
- * useCollections — fetch active product collections.
- *
- * Returns:
- *  - collections  Array of collections (ordered by the `order` field)
- *  - isLoading    True while fetching
- *  - error        Error message (or null)
- *  - refetch()    Manually re-load collections
- */
+
 export function useCollections() {
   const [collections, setCollections] = useState<Collection[]>([]);
   const [isLoading, setIsLoading] = useState(true);

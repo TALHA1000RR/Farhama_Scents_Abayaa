@@ -4,24 +4,7 @@ import { fetchProducts, fetchFeaturedProducts, fetchProductById, clearCurrentPro
 import { useAppDispatch, useAppSelector } from '../lib/store';
 
 
-/**
- * useProducts — product catalogue hook backed by Redux.
- *
- * @param autoFetch  When true (default), immediately fetches the first page
- *                   of products AND featured products on mount.
- *
- * Returns:
- *  - items        Current page of products
- *  - featured     Featured products (up to 8)
- *  - current      Single product loaded by fetchById
- *  - isLoading    True while any fetch is in flight
- *  - error        Last error message (or null)
- *  - meta         Pagination metadata: { total, page, limit, totalPages }
- *  - fetchPage(page, extraParams?)    Load a specific page
- *  - fetchByCategory(category)        Filter by category (page 1)
- *  - fetchById(id)                    Load a single product
- *  - clearCurrent()                   Reset the `current` product
- */
+
 export function useProducts(autoFetch = true) {
   const dispatch = useAppDispatch();
   const { items, featured, current, isLoading, error, meta } = useAppSelector(

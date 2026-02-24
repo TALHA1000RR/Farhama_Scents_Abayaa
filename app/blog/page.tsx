@@ -5,8 +5,7 @@ import Link from 'next/link';
 import { Calendar, ArrowRight } from 'lucide-react';
 import Footer from '../../components/Footer';
 import { useBlog } from '../../hooks';
-// import { useBlog } from '@/hooks';
-// import Footer from '@/components/Footer';
+
 
 export default function BlogPage() {
   const { posts, isLoading } = useBlog(20);
