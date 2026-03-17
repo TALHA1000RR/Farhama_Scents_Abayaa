@@ -74,17 +74,28 @@ export const productService = {
 
 // ─── Orders ───────────────────────────────────────────────────────────────────
 export const orderService = {
+  // create: (data: CreateOrderInput) =>
+  //   apiClient.post<ApiResponse<{ order: Order; clientSecret: string }>>('/orders', data),
   create: (data: CreateOrderInput) =>
-    apiClient.post<ApiResponse<{ order: Order; clientSecret: string }>>('/orders', data),
-
+    apiClient.post<ApiResponse<{ order: Order }>>('/orders', data),
+  
+  // getMyOrders: (params?: Record<string, string>) =>
+  //   apiClient.get<PaginatedResponse<Order>>('/orders/my-orders', { params }),
   getMyOrders: (params?: Record<string, string>) =>
     apiClient.get<PaginatedResponse<Order>>('/orders/my-orders', { params }),
 
+  // getById: (id: string) => apiClient.get<ApiResponse<Order>>(`/orders/${id}`),
   getById: (id: string) => apiClient.get<ApiResponse<Order>>(`/orders/${id}`),
 
+  // cancel: (id: string) => apiClient.post<ApiResponse<Order>>(`/orders/${id}/cancel`),
   cancel: (id: string) => apiClient.post<ApiResponse<Order>>(`/orders/${id}/cancel`),
 
   // Admin
+  // getAll: (params?: Record<string, string>) =>
+  //   apiClient.get<PaginatedResponse<Order>>('/orders', { params }),
+
+  // updateStatus: (id: string, status: Order['status']) =>
+  //   apiClient.patch<ApiResponse<Order>>(`/orders/${id}/status`, { status }),
   getAll: (params?: Record<string, string>) =>
     apiClient.get<PaginatedResponse<Order>>('/orders', { params }),
 

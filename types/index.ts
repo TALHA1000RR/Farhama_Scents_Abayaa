@@ -77,6 +77,28 @@ export interface ShippingAddress {
 export type OrderStatus = 'Pending' | 'Processing' | 'Shipped' | 'Completed' | 'Cancelled' | 'Refunded';
 export type PaymentStatus = 'Pending' | 'Paid' | 'Failed' | 'Refunded';
 
+// export interface Order {
+//   _id: string;
+//   orderNumber: string;
+//   user: string | User;
+//   items: OrderItem[];
+//   shippingAddress: ShippingAddress;
+//   subtotal: number;
+//   shippingCost: number;
+//   discount: number;
+//   total: number;
+//   status: OrderStatus;
+//   paymentStatus: PaymentStatus;
+//   stripePaymentIntentId?: string;
+//   createdAt: string;
+// }
+
+// export interface CreateOrderInput {
+//   items: { product: string; quantity: number }[];
+//   shippingAddress: ShippingAddress;
+//   couponCode?: string;
+// }
+
 export interface Order {
   _id: string;
   orderNumber: string;
@@ -89,14 +111,19 @@ export interface Order {
   total: number;
   status: OrderStatus;
   paymentStatus: PaymentStatus;
-  stripePaymentIntentId?: string;
+  // Square fields (replaces stripePaymentIntentId)
+  squarePaymentId?: string;
+  squareOrderId?: string;
   createdAt: string;
 }
 
+// Also update CreateOrderInput to include sourceId
 export interface CreateOrderInput {
   items: { product: string; quantity: number }[];
   shippingAddress: ShippingAddress;
   couponCode?: string;
+  sourceId: string;              // Square payment nonce
+  verificationToken?: string;    // Square 3DS/SCA token (UK requirement)
 }
 
 // ─── Content Types ─────────────────────────────────────────────────────────
